@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon RPG – A 2D Adventure</title>
+    <meta name="description" content="A 2D Pokémon-style RPG adventure game built with Phaser 3. Explore, battle, catch Pokémon, and become a champion!" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        font-family: 'Press Start 2P', monospace;
+      }
+
+      #game-container {
+        position: relative;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+
+      canvas {
+        display: block;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        window.focus();
+        document.body.addEventListener('click', () => window.focus());
+      });
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
